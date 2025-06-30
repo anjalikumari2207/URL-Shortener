@@ -1,95 +1,47 @@
-🔗 ZapLink – Modern URL Shortener with QR Codes & Analytics
-Full-Stack Web Application | React (Vite) • Supabase • TailwindCSS • Shadcn UI
-Live Demo: [https://url-shortener-xi-mauve.vercel.app/] | GitHub: [https://github.com/anjalikumari2207/URL-Shortener]
+# 🔗 ZapLink - Modern URL Shortener with QR Codes & Analytics
 
-💡 Overview
-ZapLink is a fully responsive, full-stack URL shortener application that allows users to shorten long URLs with custom slugs, generate branded QR codes, and view advanced analytics—all within a sleek, minimal dashboard.
+ZapLink is a full-stack, modern URL shortener app built using **React + Vite**, **Supabase**, **TailwindCSS**, and **Shadcn UI**. It allows users to shorten long URLs, create custom slugs, generate stylish QR codes, and view click stats in a sleek dashboard.
 
-🔨 Tech Stack
-Frontend: React (Vite), TailwindCSS, Shadcn UI, react-qrcode-logo
+## ✨ Features
 
-Backend & Database: Supabase (Database, Auth, Storage)
+- 🔐 User Authentication (Supabase Auth)
+- 🌐 Shorten long URLs with custom slugs
+- 📦 Clean and minimal UI built with **Shadcn UI** and **Tailwind**
+- 📊 Analytics: Click tracking, location stats, and timestamps
+- 🧼 Input Sanitization (`sanitize-html`) & Validation (`Yup`)
+- 📱 Responsive Design for mobile and desktop
+- 📸 QR Code generation with your brand logo
+- 🗑 Delete or manage your created links
+- ☁️ Hosted QR images using Supabase Storage
 
-Dev Tools & Libraries: sanitize-html, Yup, ESLint, Prettier
+---
 
-🚀 Features
-🔐 User Authentication using Supabase Auth (Email/Magic Link)
+## 📸 Demo
 
-🌐 URL Shortening with optional custom slugs
+[🚀 Live Demo](#) — https://url-shortener-xi-mauve.vercel.app/
 
-📸 QR Code Generation with logo and Supabase Storage integration
+![Demo Screenshot](![Screenshot 2025-07-01 043345](https://github.com/user-attachments/assets/276e24a5-b632-4721-bf11-5614a8185b69)
+)
 
-📊 Link Analytics including click tracking, location stats, and timestamps
+---
 
-✅ Validation & Security with Yup schemas and sanitize-html for XSS prevention
+## 🛠️ Tech Stack
 
-🧼 Clean, minimal, and responsive UI built with TailwindCSS and Shadcn components
+| Frontend         | Backend/DB        | Dev Tools        |
+|------------------|-------------------|------------------|
+| React + Vite     | Supabase DB       | Tailwind CSS     |
+| Shadcn UI        | Supabase Auth     | ESLint + Prettier|
+| QRCode Generator | Supabase Storage  | Vite             |
 
-☁️ Hosted QR images in Supabase Storage
+---
 
-🧹 User-scoped data access using Supabase RLS (Row-Level Security)
+## 🔧 Getting Started
 
-🗑 Full link management: delete and view stats
+### 1. Clone the repo
 
-🗂️ Folder Structure Highlights
 
-src/
-├── components/        # Reusable UI Components
-├── pages/             # Main Routes (Home, Dashboard, etc.)
-├── db/                # Supabase interaction logic
-├── hooks/             # Custom React Hooks
-├── lib/               # Form validation & sanitization
-├── context/           # User authentication context
-└── App.jsx            # Root component
+### 1. Clone the repo
 
-⚙️ Setup Instructions
-Clone repository & install dependencies
-
+```bash
 git clone https://github.com/your-username/zaplink.git
 cd zaplink
-npm install
-Configure environment variables
-Create a .env file:
-VITE_SUPABASE_URL=your-supabase-url
-VITE_SUPABASE_KEY=your-anon-key
-Start development server
-npm run dev
-Visit: http://localhost:5173
-
-🧱 Supabase Setup Checklist
-Table: urls → (id, title, original_url, custom_url, short_url, user_id, qr)
-
-Bucket: qrs for QR image storage
-
-Auth: Enable Supabase email/password or magic link login
-
-Security: Enable Row-Level Security (RLS) with appropriate policies
-
-📌 Future Roadmap
-📈 Advanced link analytics with graphs
-
-🔒 Rate-limiting and abuse detection
-
-🔐 Password-protected or expiring links
-
-🌍 Multi-language interface
-
-🧪 Unit & Integration Testing
-
-🧠 Key Learnings
-Working with serverless backends and real-time databases (Supabase)
-
-QR Code generation with branding support
-
-Form security best practices with input sanitization and validation
-
-Implementing user-specific data access via Supabase RLS policies
-
-🙌 Credits
-Supabase – Auth, DB, and Storage
-
-Shadcn UI – Headless accessible components
-
-react-qrcode-logo – QR code generation
-
-sanitize-html & yup – Input security and validation
