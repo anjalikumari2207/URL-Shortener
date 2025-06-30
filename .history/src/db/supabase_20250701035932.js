@@ -10,5 +10,4 @@ if (!supabaseUrl || !supabaseKey) {
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-export default supabase;          // ✅ default export
-export { supabaseUrl };          // ✅ optional named export
+export { supabase, supabaseUrl }; // ✅ Named export added
