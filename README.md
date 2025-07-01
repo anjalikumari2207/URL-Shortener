@@ -20,7 +20,7 @@ ZapLink is a full-stack, modern URL shortener app built using **React + Vite**, 
 
 [🚀 Live Demo](#) — https://url-shortener-xi-mauve.vercel.app/
 
-![Demo Screenshot](![Screenshot 2025-07-01 043345](https://github.com/user-attachments/assets/276e24a5-b632-4721-bf11-5614a8185b69)
+([Screenshot 2025-07-01 043345](https://github.com/user-attachments/assets/276e24a5-b632-4721-bf11-5614a8185b69)
 )
 
 ---
@@ -36,8 +36,6 @@ ZapLink is a full-stack, modern URL shortener app built using **React + Vite**, 
 ---
 
 ## 🔧 Getting Started
-
-### 1. Clone the repo
 
 
 ### 1. Clone the repo
